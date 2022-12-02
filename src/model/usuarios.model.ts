@@ -6,9 +6,5 @@ type Gender = "Male" | "Female";//Masculino o femenino
     gender:Gender ,
     bio: string,
     health: string,
-    attack: string,
-    defense?: string,//opcional atributo opcional
-    kiRestoreSpeed: string,
-    abilities: Array<string>,
-    img: string
+   
 };

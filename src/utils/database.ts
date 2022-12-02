@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 export class Database {
-    homer: string = 'HomerAdmin';
+    homer: string = 'Homero_Delivery';
     host:string = 'localhost';
     port: string = '27017';
 

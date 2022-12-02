@@ -1,0 +1,111 @@
+[
+  {
+      
+      "nombreEmpresa": "Little Caesars",
+      "logo": "/img/Empresas/littleCaesars.png",
+      "banner": "/img/Empresas/littleCaesarsBanner.png",
+      "descripcion": "Loren5",
+      "productos": [
+          {
+              "nombreProducto": "Pizza",
+              "precio": "199",
+              "imagen": "/img/Productos/LittleCaesars/1.pizza.png",
+              "descripcion": "Lorem10"
+          },
+          {
+              "nombreProducto": "Pizza Familiar",
+              "precio": "299",
+              "imagen": "/img/Productos/LittleCaesars/2.pizza.png",
+              "descripcion": "Lorem10"
+          },
+          {
+              "nombreProducto": "Pizza queso",
+              "precio": "99",
+              "imagen": "/img/Productos/LittleCaesars/3.pizza.png"
+          }
+      ]
+  },
+  {
+      
+      "nombreEmpresa": "KFC",
+      "logo": "/img/Empresas/KFC.png",
+      "banner": "/img/Empresas/KFCBanner.png",
+      "descripcion": "Lorem5",
+      "productos": [
+          {
+              "nombreProducto": "Combo kids",
+              "precio": "79",
+              "imagen": "/img/Productos/KFC/1.kfc.png",
+              "descripcion": "Lorem10"
+          },
+          {
+              "nombreProducto": "8 piezas",
+              "precio": "299",
+              "imagen": "/img/Productos/KFC/2.kfc.png",
+              "descripcion": "Lorem10"
+          },
+          {
+              "nombreProducto": "Combo Familiar",
+              "precio": "349",
+              "imagen": "/img/Productos/KFC/3.kfc.png",
+              "descripcion": "Lorem10"
+          }
+      ]
+  },
+  {
+      
+      "nombreEmpresa": "Burger King",
+      "logo": "/img/Empresas/BurgerKing.png",
+      "banner": "/img/Empresas/BurgerKingBanner.png",
+      "descripcion": "Lorem5",
+      "productos": [
+          {
+              "nombreProducto": "Whopper",
+              "precio": "99",
+              "imagen": "/img/Productos/BurgerKing/1.burger.png",
+              "descripcio":"Lorem10"
+          },
+          {
+              "nombreProducto": "Sundae",
+              "precio": "149",
+              "imagen": "/img/Productos/BurgerKing/2.burger.png",
+              "descripcio":"Lorem10"
+          },
+          {
+              "nombreProducto": "Combo Kids",
+              "precio": "150",
+              "imagen": "/img/Productos/BurgerKing/3.burger.png",
+              "descripcio":"Lorem10"
+          }
+      ]
+  },
+  {
+      
+      "nombreEmpresa": "Taco Bell",
+      "logo": "/img/Empresas/TacoBell.png",
+      "banner": "/img/Empresas/TacoBellBanner.png",
+      "descripcion": "Lorem5",
+      "productos": [
+          {
+              "nombreProducto": "Cheese Burrito",
+              "precio": "79",
+              "imagen": "/img/Productos/TacoBell/1.Taco.png",
+              "descripcion":"Lorem10"
+          },
+          {
+              "nombreProducto": "Crunchywrap Supreme",
+              "precio": "30",
+              "imagen": "/img/Productos/TacoBell/2.Taco.png",
+              "descripcion":"Lorem10"
+          },
+          {
+              "nombreProducto": "Chicken Burrito",
+              "precio": "40",
+              "imagen": "/img/Productos/TacoBell/3.Taco.png",
+              "descripcion":"Lorem10"
+          }
+      ]
+  }
+]
+  
+
