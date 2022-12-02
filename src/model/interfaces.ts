@@ -27,3 +27,11 @@ export interface Motoristas {
     ordenesFinalizadas:Array<string>,
     matricula: string
 }
+export interface Empresas {
+    nombreEmpresa: string,
+    logo: string,
+    banner: string,
+    descripcion: string,
+    productos:Array<string>
+}
+//jj
