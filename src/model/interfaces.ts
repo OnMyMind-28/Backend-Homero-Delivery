@@ -6,9 +6,32 @@ type Gender = "Male" | "Female";//Masculino o femenino
     gender:Gender ,
     bio: string,
     health: string,
-    attack: string,
-    defense?: string,//opcional atributo opcional
-    kiRestoreSpeed: string,
-    abilities: Array<string>,
-    img: string
+   
 };
+export interface Admin {
+    id: string,
+    nombre: string,
+    apellido: string,
+    mail: string,
+    username: string,
+    password: string,
+    urlImagen: string
+};
+export interface Motoristas {
+    nombreMotorista: string,
+    apellidoMotorista: string,
+    mail: string,
+    password: string,
+    estado: string,
+    ordenesPendientes: Array<string>,
+    ordenesFinalizadas:Array<string>,
+    matricula: string
+}
+export interface Empresas {
+    nombreEmpresa: string,
+    logo: string,
+    banner: string,
+    descripcion: string,
+    productos:Array<string>
+}
+//jj
