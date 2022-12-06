@@ -19,18 +19,9 @@ export const CrearUsuario = async (req: Request, res: Response) => {
     const nuevoUsuario = new UsuariosSchema(
      // req.body ->se puede solo agregando esto o atribito por atribito como se muestra en el comentario
       
-      {
-        id: req.body.id,
-        name: req.body.name,
-        race: req.body.race,
-        gender: req.body.gender,
-        bio: req.body.bio,
-        health: req.body.health,
-        attack: req.body.attack,
-        defense: req.body.defense,
-        kiRestoreSpeed: req.body.kiRestoreSpeed,
-        abilities: req.body.abilities,
-        img: req.body.img
+      { 
+        ...req.body
+      
     }
     );
     const result =  await nuevoUsuario.save();
@@ -39,31 +30,22 @@ export const CrearUsuario = async (req: Request, res: Response) => {
   };
 
 export const ActualizarUsuario = async (req: Request, res: Response) => {
-  const result = await UsuariosSchema.updateOne({_id: req.params.id },
+ 
+  const result = await UsuariosSchema.findByIdAndUpdate({_id: req.params.id },
     {
-      id: req.body.id,
-      name: req.body.name,
-      race: req.body.race,
-      gender: req.body.gender,
-      bio: req.body.bio,
-      health: req.body.health,
-      attack: req.body.attack,
-      defense: req.body.defense,
-      kiRestoreSpeed: req.body.kiRestoreSpeed,
-      abilities: req.body.abilities,
-      img: req.body.img,
+      ...req.body
     });
     res.send(
       {
-        massage: 'Actualizar usuario: '+ req.params.id, 
+        msg: 'Actualizar usuario: '+ req.params.id, 
         result
       });
     res.end();
   };
 export const EliminarUsuario = async (req: Request, res: Response) => {
- const result =  await UsuariosSchema.remove({_id: req.params.id});
+ const result =  await UsuariosSchema.deleteOne({_id: req.params.id});
     res.send({
-      massage: 'Eliminar usuario: '+ req.params.id,
+      msg: 'Eliminar usuario: '+ req.params.id,
       result
     
     });
