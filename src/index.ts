@@ -5,7 +5,9 @@ import { routeAdmin } from './routers/admin.router';
 import { routeMotoristas } from './routers/motoristas.router';
 import { routeEmpresas } from './routers/empresas.router';
 import { Database } from './utils/database';
+
 import cors from 'cors';
+import { routePago } from './routers/pago';
 
 dotenv.config();
 const db: Database = new Database();//instancia
@@ -17,6 +19,8 @@ app.use(cors());
 app.use(express.json());//para poblar el objeto body
 app.use(express.urlencoded({extended:true}));//para poblar el objeto body
 
+app.use('/api/v1/users/', routeUsuarios);
+app.use('/api/v1/pay/',   routePago);
 //app.use('/usuarios', routeUsuarios);
 //app.use('/administradores', routeAdmin);
 //app.use('/motoristas', routeMotoristas);
