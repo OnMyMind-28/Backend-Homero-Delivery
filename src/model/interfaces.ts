@@ -1,11 +1,12 @@
 type Gender = "Male" | "Female";//Masculino o femenino
  export interface Usuario {
-    id: string,
-    name: string ,
-    race: string ,
-    gender:Gender ,
-    bio: string,
-    health: string,
+    id:string,
+    nombre:string, 
+    apellido:string,
+    mail:string,
+    password:string,
+    ordenes: Array<string>,
+    pago: Array<string>
    
 };
 export interface Admin {

@@ -10,7 +10,7 @@ import cors from 'cors';
 import { routePago } from './routers/pago';
 
 dotenv.config();
-const db: Database = new Database();//instancia
+const homer: Database = new Database();//instancia
 
 const app: Express = express();
 const port = process.env.PORT;
@@ -19,12 +19,12 @@ app.use(cors());
 app.use(express.json());//para poblar el objeto body
 app.use(express.urlencoded({extended:true}));//para poblar el objeto body
 
-app.use('/api/v1/users/', routeUsuarios);
-app.use('/api/v1/pay/',   routePago);
-//app.use('/usuarios', routeUsuarios);
+//app.use('/api/v1/users/', routeUsuarios);
+//app.use('/api/v1/pay/',   routePago);
+app.use('/usuarios', routeUsuarios);
 //app.use('/administradores', routeAdmin);
 //app.use('/motoristas', routeMotoristas);
-app.use('/empresas', routeEmpresas);
+//app.use('/empresas', routeEmpresas);
 //Get
 app.get('/', (req: Request, res: Response) => {
   res.send('Express + TypeScript Server......');
