@@ -3,6 +3,7 @@ import { Usuario } from './usuarios.model';
 
 const schema = new mongoose.Schema<Usuario>({
     //Usuario es la interface que creamos 
+    // esquema de usuario
     id:String,
     nombre:String, 
     apellido:String,
