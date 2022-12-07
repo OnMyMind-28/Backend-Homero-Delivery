@@ -20,7 +20,13 @@ export const CrearUsuario = async (req: Request, res: Response) => {
      // req.body ->se puede solo agregando esto o atribito por atribito como se muestra en el comentario
       
       { 
-        ...req.body
+        id:req.body.id,
+        nombre:req.body.nombre, 
+        apellido:req.body.apellido,
+        mail:req.body.mail,
+        password:req.body.password,
+        ordenes:req.body.ordenes,
+        pago:req.body.pago
       
     }
     );
@@ -33,7 +39,13 @@ export const ActualizarUsuario = async (req: Request, res: Response) => {
  
   const result = await UsuariosSchema.findByIdAndUpdate({_id: req.params.id },
     {
-      ...req.body
+      id:req.body.id,
+      nombre:req.body.nombre, 
+      apellido:req.body.apellido,
+      mail:req.body.mail,
+      password:req.body.password,
+      ordenes:req.body.ordenes,
+      pago:req.body.pago
     });
     res.send(
       {
