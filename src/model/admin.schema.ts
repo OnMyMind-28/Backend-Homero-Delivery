@@ -10,5 +10,5 @@ const schema = new mongoose.Schema<Admin>({//Admin es la interface que creamos
     password: String,
     urlImagen: String,
 });
-
+//jk
 export const AdminSchema = mongoose.model('administradores', schema);//administradores es el nombre de la colección
